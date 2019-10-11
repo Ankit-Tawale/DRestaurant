@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "116750206930",
+    "firebase_url": "https://digital-restaurant-1faa6.firebaseio.com",
+    "project_id": "digital-restaurant-1faa6",
+    "storage_bucket": "digital-restaurant-1faa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116750206930:android:966753ed1fe11379086a0b",
+        "android_client_info": {
+          "package_name": "com.example.digitalrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116750206930-n0he4louejjie7s6k92g7qqtbs4cto0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digitalrestaurant",
+            "certificate_hash": "bef37046d5952a29068af651db5e184a70971728"
+          }
+        },
+        {
+          "client_id": "116750206930-i5db6malfr8r3lrop66vposisj5ai9iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUDVHWssqVGolBmITYP_3CI2QQ7jrJs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116750206930-i5db6malfr8r3lrop66vposisj5ai9iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116750206930:android:250b8da707d83668086a0b",
+        "android_client_info": {
+          "package_name": "com.example.drestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116750206930-ve0920jf7ivildodmtap4j28g0ogjh88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drestaurant",
+            "certificate_hash": "bef37046d5952a29068af651db5e184a70971728"
+          }
+        },
+        {
+          "client_id": "116750206930-i5db6malfr8r3lrop66vposisj5ai9iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUDVHWssqVGolBmITYP_3CI2QQ7jrJs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116750206930-i5db6malfr8r3lrop66vposisj5ai9iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

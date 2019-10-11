@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodDetailActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/food_add_to_cart">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/food_detail_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent">
+
+                    </androidx.appcompat.widget.Toolbar>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="25dp">
+
+                        <ImageView
+                            android:id="@+id/food_image_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="360dp"
+                            android:scaleType="centerCrop"
+                            >
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/appbar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/food_title_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arima_madurai_bold"
+                    android:text="Food Title"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/food_price_details"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/arima_madurai_bold"
+                    android:text="$ price"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@id/linear_details"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Description"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/food_description_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_description"
+                android:text="Food Description"
+                android:fontFamily="@font/arima_madurai_bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/number_btn"
+                android:layout_below="@id/food_description_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:initialNumber="1"
+                app:finalNumber="10"
+                app:textSize="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/food_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:text="Add To Cart"
+        />
+
+</RelativeLayout>
